@@ -214,21 +214,6 @@ export default function ChatRoom({ socket, partnerId, onDisconnect, onSkip }: Ch
             </motion.div>
             <div>
               <h2 className="font-semibold text-lg">Stranger</h2>
-              {partnerTyping && (
-                <motion.p
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  className="text-sm text-primary-400 flex items-center gap-1"
-                >
-                  <span className="flex gap-1">
-                    <span className="w-1 h-1 bg-primary-400 rounded-full animate-bounce" style={{ animationDelay: '0ms' }}></span>
-                    <span className="w-1 h-1 bg-primary-400 rounded-full animate-bounce" style={{ animationDelay: '150ms' }}></span>
-                    <span className="w-1 h-1 bg-primary-400 rounded-full animate-bounce" style={{ animationDelay: '300ms' }}></span>
-                  </span>
-                  typing...
-                </motion.p>
-              )}
             </div>
           </div>
           <div className="flex items-center gap-2">
