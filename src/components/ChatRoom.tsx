@@ -4,6 +4,7 @@ import { useEffect, useState, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Send, X, User, Image as ImageIcon, XCircle, SkipForward } from 'lucide-react'
 import { Socket } from 'socket.io-client'
+import Script from "next/script";
 
 interface Message {
   id: string
@@ -225,6 +226,10 @@ export default function ChatRoom({ socket, partnerId, onDisconnect, onSkip }: Ch
               title="Skip & Next"
             >
               <SkipForward className="w-4 h-4" />
+                    <Script
+  src="https://pl28894878.effectivegatecpm.com/8b/5b/6b/8b5b6bee367f1ec626175a4d6d0d3e56.js"
+  strategy="afterInteractive"
+/>
               <span className="hidden sm:inline">Skip</span>
             </motion.button>
             <motion.button
