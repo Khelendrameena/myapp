@@ -121,10 +121,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen flex flex-col">
-      <Script
-  src="https://pl28894878.effectivegatecpm.com/8b/5b/6b/8b5b6bee367f1ec626175a4d6d0d3e56.js"
-  strategy="afterInteractive"
-/>
+
       {!matched ? (
         <MatchingScreen 
           onStartMatching={startMatching}
